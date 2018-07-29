@@ -3,6 +3,8 @@
 		<view-box :body-padding-top="pageTitle?'50px':'0px'" ref="viewBox">
 			<x-header slot="header" v-if="pageTitle" :title="pageTitle" style="width:100%;position:absolute;left:0;top:0;z-index:100;"></x-header>
 			<router-view ></router-view>
+			
+			
 			<tabbar slot="bottom">
 				<tabbar-item selected link="/"  >
 					<img slot="icon" src="../assets/toobar/shop_fill.png"/>
@@ -41,6 +43,9 @@
 	     
 	    }
 	  },
+	  mounted:function(){
+	  	
+	  },
 	  methods:{
 	  	
 	  },
@@ -52,7 +57,7 @@
 	  computed: {
 	    ...mapGetters([
 	      'pageTitle',
-	      'pageLoading'
+	      'pageLoading',
 	    ])
   	  }
   	 

@@ -2,7 +2,7 @@
 	
 	<div >
 		
-		<swiper :list="imgList" height="280px" auto loop :interval="3000" :duration="1000" dots-position="center"></swiper>
+		<swiper :list="imgList" @click.native="goin" height="280px" auto loop :interval="3000" :duration="1000" dots-position="center"></swiper>
 		<x-button class="mbtn" type="primary" action-type="button" link="/shoplist">进入店铺</x-button>
 	</div>
 
@@ -26,6 +26,11 @@
 			  url: 'javascript:',
 			  img: '/src/assets/timg.jpg',
 			}],
+	  	}
+	  },
+	  methods:{
+	  	goin(){
+	  		this.$router.push({path:"/shoplist"});
 	  	}
 	  },
 	  components: {

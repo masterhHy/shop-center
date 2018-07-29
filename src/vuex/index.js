@@ -19,7 +19,7 @@ export default new Vuex.Store({
     pageTitle(state,{ pageTitle }) {
       // 变更状态
       state.pageTitle=pageTitle;
-    }
+    },
   },
   getters: {
     pageLoading: state => {
@@ -27,6 +27,6 @@ export default new Vuex.Store({
     },
     pageTitle: state => {
       return state.pageTitle;
-    }
+    },
   }
 })

@@ -6,6 +6,8 @@ import shoplist from '@/pages/home/shoplist.vue'
 import store from '../vuex'
 
 import chat from '@/components/HelloWorld.vue'
+
+
 Vue.use(Router)
 
 var router = new Router({
@@ -27,7 +29,7 @@ var router = new Router({
 	      name: 'chat',
 	      component: chat,
       }]
-    }
+    },
   ]
 })
 // 设置全局钩子
@@ -39,6 +41,5 @@ router.beforeEach(function (to, from, next) {
 
 router.afterEach(function (to) {
 	store.commit("pageLoading", {isLoading: false})
-  
 })
 export default router

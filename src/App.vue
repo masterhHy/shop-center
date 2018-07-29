@@ -18,7 +18,7 @@ export default {
 @import '~vux/src/styles/reset.less';
 
 body {
-  background-color: #fbf9fe;
+  background-color: #f2f2f2;
 }
 html, body {
   height: 100%;
