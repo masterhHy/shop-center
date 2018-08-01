@@ -11,7 +11,7 @@
 				<ul >
 					<span v-for="(val,ix) in sort">
 						<sticky scroll-box="vux_view_box_body" ref="sticky" :data-ix="ix" >
-						  <div  style="background-color: #e6e6e6;">{{val.sortName}}</div>
+						  <div  style="background-color: #e6e6e6;color:rgb(103, 106, 108);">{{val.sortName}}</div>
 						</sticky>
 						<li class="rightli" v-for="(v,i) in val.goods" >
 							<shop-item :goodsImg="v.goddsImg" :goodsName="v.goodsName" :goodsPrice="v.price"></shop-item>
@@ -55,7 +55,7 @@
 	  			sortName:sortName[i]
 	  		}
 	  		let goods=[];
-	  		for (let j=1 ;j<11;j++) {
+	  		for (let j=1 ;j<4;j++) {
 	  			let g={
 	  				goodsName:"商品名称-->"+j,
 	  				goddsImg:"/src/assets/shop.jpg",
@@ -122,26 +122,28 @@
 <style>
 	.left{
 		float: left;
-		width: 100px;
+		width: 80px;
 		height: 100%;
+		background-color: white;
 	}
 	.leftli{
 		height: 30px;
 		text-align: center;
 		line-height: 30px;
-		padding: 3px 0px;
+		padding: 10px 0px;
+		font-size: 15px;
+		border-bottom: 1px solid #f2f2f2;
+		border-top: 1px solid #f2f2f2;
 	}
-	.rightli{
-		height: 50px;
-	}
+	
 	.right{
-		margin-left: 110px;
+		margin-left: 85px;
 		height: 100%;
 	}
 	.right .weui-tab__panel{
 		padding: 0px;
 	}
 	.activity{
-		background-color: red;
+		background-color: #f2f2f2;
 	}
 </style>

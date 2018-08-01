@@ -9,7 +9,7 @@
 <script>
 
 export default {
-  name: 'app',
+  name: 'app'
   
 }
 </script>
@@ -25,4 +25,5 @@ html, body {
   width: 100%;
   overflow-x: hidden;
 }
+
 </style>

@@ -5,7 +5,7 @@
 html{font-size:0.625em;}/*把px设置成10px   方便 每个局部模块的rem取值   1.2rem = 12px*/
 ::selection{background:#3399FF ;color:#fff ;}
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,figure,figcaption,input,textarea,p,blockquote,th,td,span{padding:0;margin:0;}
-body{font:normal 1.2em  微软雅黑,Helvetica Neue, Helvetica, Arial, sans-serif;text-align: justify;color:rgb(103, 106, 108);}/*font:normal 0.75em/1.5em "微软雅黑","冬青黑体简体中文 w3","宋体";*/
+body{font:normal 1.2em  微软雅黑,Helvetica Neue, Helvetica, Arial, sans-serif;text-align: justify;}/*font:normal 0.75em/1.5em "微软雅黑","冬青黑体简体中文 w3","宋体";*/
 fieldset,img,html,body,iframe{border:0;}
 html,body{height: 100%;}
 /*去掉input[type="number"]*/
@@ -63,6 +63,7 @@ textarea{overflow:auto; }
 /*text*/
 .text-indent{text-indent: 2em!important;}
 .text-overflow{text-overflow: ellipsis;white-space: nowrap;overflow: hidden;word-break:break-all;word-wrap:break-word;}
+.text-center{text-align: center;}
 /*vertical*/
 .v-m{vertical-align: middle!important;}
 .v-t{vertical-align: top;}
@@ -71,7 +72,11 @@ textarea{overflow:auto; }
 /*shadow*/
 .text-shadow{text-shadow:0 1px 1px hsla(0,0%,100%,.8);}
 .text-shadow-black{text-shadow: 0 -1px 1px #000;}
-.box-shadow{box-shadow:0 8px 16px rgba(0,0,0,0.18);}
+.box-shadow{
+	box-shadow:1px 1px 5px #333333;
+	-moz-box-shadow:1px 1px 5px #333333;
+ 	-webkit-box-shadow:1px 1px 5px #333333;
+}
 /*background*/
 .bg-gray{background-color:#f3f3f4;}
 .bg-white{background-color:#fff;}
@@ -304,3 +309,21 @@ textarea{overflow:auto; }
     right: 6px;
     top: 30px; } }
 
+.app-theme-color{
+	color: #3383ff;
+}
+.app-theme-bgcolor{
+	background-color: #3383ff;
+}
+.app-theme-fillcolor{
+	fill: #3383ff;
+}
+* {
+    -webkit-touch-callout:none;  /*系统默认菜单被禁用*/
+	  -webkit-user-select:none; /*webkit浏览器*/
+	  -khtml-user-select:none; /*早期浏览器*/
+	  -moz-user-select:none; /*火狐*/
+	  -ms-user-select:none;  /*IE10*/
+	  user-select:none;
+
+ }
