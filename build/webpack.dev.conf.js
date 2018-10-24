@@ -34,7 +34,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     watchOptions: {
       poll: config.dev.poll,
     },
-    disableHostCheck: true,
+    disableHostCheck: true,//解决外网访问不了
   },
   
   plugins: [
